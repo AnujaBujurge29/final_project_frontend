@@ -12,7 +12,7 @@
 * npm run dev
 ----------------------------------------------------------------------
 # Dependancies:
-1.  Tailvind Css
+1.  Tailwind CSS
 ### Install Tailwind CSS
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
@@ -25,7 +25,9 @@ content: [
 
 ### Add the Tailwind directives to your index.CSS
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
 ### install PostCSS Language Support extension in VS Code
