@@ -90,10 +90,10 @@ export default function BookAdd() {
         </div>
         <div className="mb-6">
           <label className="block mb-2 text-l font-medium text-gray-900 dark:text-black">
-            Price:
+            Image:
           </label>
           <input
-            name="price"
+            name="image"
             onChange={handleChange}
             value={input.image}
             type="text"
