@@ -32,7 +32,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="/add"
+                href="/addbooks"
                 className="block py-2 pl-3 pr-4 text-gray-900 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:text-white border-b-2 border-white border-solid md:hover:border-b-gray-900 md:dark:hover:border-b-blue-200 md:dark:border-[#0c2b5e]"
               >
                 Add Books

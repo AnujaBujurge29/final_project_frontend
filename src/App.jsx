@@ -1,4 +1,3 @@
-// import "./App.css";
 import React from "react";
 import { useState, useEffect } from "react";
 import { BsMoonFill } from "react-icons/bs";
@@ -8,11 +7,13 @@ import { Routes, Route } from "react-router-dom";
 //import Components
 import NavBar from "./Components/NavBar";
 import Home from "./Components/Home";
-import BookAddAPI from "./Components/BookAddAPI";
+import BookAddAPI from "./Components/BookAdd";
 import BookListIndex from "./Components/Book/BookListIndex";
 import About from "./Components/About";
-import BookDetails from "./Components/Book/BookDetails";
 import Footer from "./Components/Footer";
+import BookUpdate from "./Components/Book/BookUpdate";
+
+
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -48,10 +49,10 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} exact />
-          <Route path="/add" element={<BookAddAPI />} exact />
-          <Route path="/books" element={<BookListIndex />} exact />
           <Route path="/about" element={<About />} exact />
-          {/* <Route path="/books/:id" element={<BookDetails/>}/> */}
+          <Route path="/addBooks" element={<BookAddAPI />} exact />
+          <Route path="/books" element={<BookListIndex />} exact />
+          <Route path="/books/:id" element={<BookUpdate/>} exact/>
         </Routes>
         <Footer/>
       </Router>

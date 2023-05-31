@@ -8,11 +8,11 @@
 ## front end installations
 * npm create vite@latest frontend
 * cd frontend
-* npm install *
+* npm install 
 * npm run dev
 ----------------------------------------------------------------------
 # Dependancies:
-1.  Tailvind Css
+1.  TailWind CSS - 
 ### Install Tailwind CSS
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
@@ -25,13 +25,15 @@ content: [
 
 ### Add the Tailwind directives to your index.CSS
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
 ### install PostCSS Language Support extension in VS Code
 - This extension is applied to .css, .pcss and .postcss files. It also applies to the following contexts:
-- * HTML <style> elements.
-- * Markdown css and pcss code blocks.
+    * HTML <style> elements.
+    * Markdown css and pcss code blocks.
 
 2. React-router-dom
 ### Installation
