@@ -50,11 +50,11 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} exact />
-          <Route path="/:id" element={<Book />} exact/>
           <Route path="/about" element={<About />} exact />
           <Route path="/addBooks" element={<BookAddAPI />} exact />
           <Route path="/books" element={<BookListIndex />} exact />
           <Route path="/books/:id" element={<BookUpdate/>} />
+          <Route path="/:id" element={<Book />} exact/>
         </Routes>
         <Footer/>
       </Router>

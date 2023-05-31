@@ -1,3 +1,4 @@
+#
 ## The project must include a README.md file with the following sections:
 - Introduction: A paragraph used to introduce interested parties to the project and needs to include one or more screenshots.
 - Technologies Used: A list of all technologies, libraries, APIs, etc. used in the project.
