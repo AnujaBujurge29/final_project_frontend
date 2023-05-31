@@ -1,8 +1,3 @@
-# MERN - Full Satack Project:
-
------------------------------------------------------------------------
-
-
 ## The project must include a README.md file with the following sections:
 - Introduction: A paragraph used to introduce interested parties to the project and needs to include one or more screenshots.
 - Technologies Used: A list of all technologies, libraries, APIs, etc. used in the project.
@@ -13,11 +8,11 @@
 ## front end installations
 * npm create vite@latest frontend
 * cd frontend
-* npm install 
+* npm install *
 * npm run dev
 ----------------------------------------------------------------------
 # Dependancies:
-1.  TailWind CSS - 
+1.  Tailwind CSS
 ### Install Tailwind CSS
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
@@ -37,8 +32,8 @@ content: [
 
 ### install PostCSS Language Support extension in VS Code
 - This extension is applied to .css, .pcss and .postcss files. It also applies to the following contexts:
-    * HTML <style> elements.
-    * Markdown css and pcss code blocks.
+- * HTML <style> elements.
+- * Markdown css and pcss code blocks.
 
 2. React-router-dom
 ### Installation
