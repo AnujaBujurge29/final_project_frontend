@@ -12,7 +12,7 @@ const {id} = useParams()
   }, [id]);
 
   const deleteHandler = () => {
-    deleteBook(_id)
+    deleteBook(id)
       .then((res) => res.data)
       .then(() => nav("/books"));
   };

@@ -9,10 +9,10 @@ export default function Footer() {
           <span
             className="text-neutral-800 dark:text-neutral-400"
           >
-            <a className="hover:underline">Anuja Bujurge™</a> All
+            <p className="hover:underline">Anuja Bujurge™</p> All
              {"  "}Rights Reserved.{"  "}
           </span>
-          <span className="text-neutral-800 underline dark:text-neutral-400"><a target="_blank" href="https://mern-project-backend-58df.onrender.com/books">Backend Render Link</a></span>
+          <span className="text-neutral-800 underline dark:text-neutral-400"><a target="_blank" to="https://mern-project-backend-58df.onrender.com/books">Backend Render Link</a></span>
         </div>
       </footer>
     </div>
