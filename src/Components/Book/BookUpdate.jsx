@@ -26,7 +26,7 @@ export default function BookUpdate() {
 
   const updateBook = (e) => {
     e.preventDefault();
-    console.log(input);
+    // console.log(input);
     const updatedBook = {
       name: String(e.target.name.value),
       author: String(e.target.author.value),

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { deleteBook } from "../../Services/book-api";
 import { useNavigate } from "react-router-dom";
 
@@ -10,19 +9,20 @@ export default function BookItem(props) {
     deleteBook(_id)
       .then((res) => res.data)
       .then(() => nav("/"))
-      // .then(() => nav("/books"));
+  
   };
   return (
     <div className="list-items bg-white dark:bg-[#0c2b5e] dark:text-gray-400 h-[500px] ">
-      <div className="h-[220px] m-1">
+      <div className="h-[150px] m-1">
         <h2 className="font-bold">Title: {name}</h2>
         <h3>Author: {author}</h3>
         <p>Price: {price}</p>
         <p>Desciption: {description}</p>
-        <img src={image} className="h-[150px]"/><br/>
-        <br />
+        {/* <img src={image} className="h-[150px]"/><br/> */}
+        {/* <br /> */}
       </div>
-      <div className="flex p-1  place-content-between m-0 pt-[100px] ">
+      <div><img src={image} className="h-[150px]"/><br/></div>
+      <div className="flex p-1  place-content-between m-0  ">
         <a href={`/books/${_id}`}>
           <button
             type="submit"

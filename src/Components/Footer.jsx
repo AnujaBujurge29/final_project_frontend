@@ -3,33 +3,16 @@ import React from "react";
 export default function Footer() {
   return (
     <div>
-      <footer className=" fixed bottom-0 bg-gray-300 rounded-lg shadow m-4 mb-0 dark:bg-gray-800 w-[1600px] ">
-        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023 <a className="hover:underline">Anuja Bujurge™ {"  "}</a> All
-            Rights Reserved.
+      <footer className="bg-neutral-200 text-center dark:bg-neutral-700 lg:text-left">
+        <div className="p-4 text-center text-neutral-700 dark:text-neutral-200">
+          © 2023
+          <span
+            className="text-neutral-800 dark:text-neutral-400"
+          >
+            <a className="hover:underline">Anuja Bujurge™</a> All
+             {"  "}Rights Reserved.{"  "}
           </span>
-          <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
-              <a href="/" className="mr-4 hover:underline md:mr-6 ">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="mr-4 hover:underline md:mr-6">
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://mern-project-backend-58df.onrender.com/books"
-                className="mr-4 hover:underline md:mr-6"
-              >
-                Backend Link
-              </a>
-            </li>
-          </ul>
+          <span className="text-neutral-800 underline dark:text-neutral-400"><a target="_blank" href="https://mern-project-backend-58df.onrender.com/books">Backend Render Link</a></span>
         </div>
       </footer>
     </div>
