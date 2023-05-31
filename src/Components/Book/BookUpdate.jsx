@@ -9,24 +9,20 @@ export default function BookUpdate() {
     "block w-[500px] p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-cyan-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 ";
   const id = useParams().id;
   const nav = useNavigate();
-  // const [book, setBook] =  useState()
   const [input, setInput] = useState();
   useEffect(() => {
     getBook(id)
     .then((res) => setInput(res.data.books))
-    
   }, [id]);
 
   const handleChange = (e) => {
     setInput((prevState) => ({
       ...prevState,
-      // [e.target.name]: e.target.defaultValue,
     }));
   };
 
   const updateBook = (e) => {
     e.preventDefault();
-    // console.log(input);
     const updatedBook = {
       name: String(e.target.name.value),
       author: String(e.target.author.value),
@@ -34,7 +30,6 @@ export default function BookUpdate() {
       price: Number(e.target.price.value),
       image:String(e.target.image.value)
     };
-    // console.log(updatedBook);
     editBook(id, updatedBook).then(()=> nav(`/books`))
   };
   return (

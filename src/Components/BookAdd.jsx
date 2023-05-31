@@ -6,15 +6,12 @@ export default function BookAdd() {
   // style variables
   const inputStyle =
     "block w-[500px] p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-cyan-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 ";
-
-  //Variables to handle form
   const nav = useNavigate();
   const [input, setInput] = useState({});
 
   const handleChange = (e) => {
     setInput((prevState) => ({
       ...prevState,
-      // [e.target.name.value]: e.target.value,
     }));
   };
   const handleSubmit = (e) => {
@@ -26,7 +23,6 @@ export default function BookAdd() {
       price: Number(e.target.price.value),
       image:String(e.target.image.value)
     };
-    console.log(book);
     createBook(book).then(() => nav("/books"));
   };
 

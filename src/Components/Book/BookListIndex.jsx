@@ -14,10 +14,8 @@ export default function BookListIndex() {
     fetchHandler().then((data) => setBooks(data.books));
   }, []);
   
-
   return (
     <div>
-      {/* <h1>List of Books:</h1> */}
       <ul>
         {books &&
           books.map((book, i) => (

@@ -17,12 +17,6 @@ h5{
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-  margin: 0;
-  margin-left: 5px;
-  padding: 0;
-} */
-
 ul {
   display: flex;
   flex-direction: row;

@@ -1,6 +1,5 @@
 import React from "react";
 import { FaBook } from "react-icons/fa";
-// import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -55,5 +54,4 @@ const NavBar = () => {
     </nav>
   );
 };
-
 export default NavBar;

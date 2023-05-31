@@ -3,6 +3,7 @@ import axios from 'axios';
 
 const API_URL = "https://mern-project-backend-58df.onrender.com/books"
 // const API_URL = 'http://localhost:3001/books';
+
 //Index: Show all the things! 
 export async function getBooksList() {
     const URL = API_URL;
@@ -18,7 +19,6 @@ export async function getBook(id) {
 }
 // Edit an Book
 export async function editBook(id, updatedBook) {
-    // console.log(updatedBook);
     const URL = `${API_URL}/${id}`;
     const response =await axios.put(URL, updatedBook)
     .then((res) =>res.data)
