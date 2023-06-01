@@ -1,50 +1,87 @@
-#
-## The project must include a README.md file with the following sections:
-- Introduction: A paragraph used to introduce interested parties to the project and needs to include one or more screenshots.
-- Technologies Used: A list of all technologies, libraries, APIs, etc. used in the project.
-- Getting Started: Links to the project's planning (Trello board) and the deployed app on Render-DashBoard.
-- Unsolved Problems: List any unsolved issues.
-- Future Enhancements: Identify future features and enhancements planned for the project.
-------------------------------------------------------------------------
-## front end installations
-* npm create vite@latest frontend
-* cd frontend
-* npm install *
-* npm run dev
-----------------------------------------------------------------------
-# Dependancies:
-1.  Tailwind CSS
-### Install Tailwind CSS
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+# MERN SP Application
 
-### Configure your template paths
-content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+# Book-Store
+Book Store is as MERN Application created using ReactJS, JavaScript and TailWind in Frontend And NodeJS, Express, MongoDB, Mongoose.
 
-### Add the Tailwind directives to your index.CSS
-@tailwind base;
+You can find Backend Render link for this project 
+#### [HERE](https://mern-project-backend-58df.onrender.com)
 
-@tailwind components;
+## Introducation:
 
-@tailwind utilities;
+I have created a Full Stack CRUD Web application using MERN. 
+As a Book Store user, in your store admin account, you can add books in your store, edit details of books, remove book from store list, and read deatils about specific book. 
 
-### install PostCSS Language Support extension in VS Code
-- This extension is applied to .css, .pcss and .postcss files. It also applies to the following contexts:
-- * HTML <style> elements.
-- * Markdown css and pcss code blocks.
+## Technogies: 
+ 
+## Front End Technologies:
 
-2. React-router-dom
-### Installation
-npm install react-router-dom
+#### 1.  ReactJS
+  - Installations:
+   Created base project by using VITE
 
-3. React Icons
-npm install react-icons --save
+    ```
+    npm create vite@latest  * 
 
-4. Axios installation
-npm install axios
-----------------------------------------------------------------------
-## API from backend
-api =https://mern-project-backend-58df.onrender.com/books
+    npm install
+
+    npm run dev
+    ```
+----------------------------------------------------------------------------------------------------------------------
+#### 2.  Dependancies:
+  - TailWind CSS Installations:
+    ```
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+    ```
+  - Configure your template paths
+
+    ```
+    content: [
+      "./index.html",
+
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ]
+    ```
+  - Add the Tailwind directives to your index.CSS
+
+    
+    @tailwind base;
+
+    @tailwind components;
+
+    @tailwind utilities;
+    
+----------------------------------------------------------------------------------------------------------------------
+#### 3. React-Router-DOM: 
+  Installations:
+
+    
+    npm install react-router-dom
+    
+----------------------------------------------------------------------------------------------------------------------
+#### 4. Axios 
+  Installations:
+
+    
+    npm install axios
+    
+----------------------------------------------------------------------------------------------------------------------
+#### 5. React Icons  
+  Installations:
+
+    
+    npm install react-icons --save
+    
+
+----------------------------------------------------------------------------------------------------------------------
+#### 4. Backend
+
+This App will only with this [Backend link](https://github.com/AnujaBujurge29/final_project_backend.git)
+
+----------------------------------------------------------------------------------------------------------------------
+
+## Future Enhancements:
+  - Authentication Part:
+    - Admin Login with full CRUD functinality.
+    - User Signup and login with Read, add to cart, payment funtionality. 
+    - Whole app can be work as Full shoping website for Books.
