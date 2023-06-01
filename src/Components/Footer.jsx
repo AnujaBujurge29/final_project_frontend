@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
             className="text-neutral-800 dark:text-neutral-400 hover:underline"
           >Anuja Bujurge™ 
           </span>{" "}Rights Reserved.{" "}
-          <span className="text-neutral-800 underline dark:text-neutral-400"><a target="_blank" to="https://mern-project-backend-58df.onrender.com/books">Backend Render Link</a></span>
+          <span className="text-neutral-800 underline dark:text-neutral-400"><Link target="_blank" to="https://mern-project-backend-58df.onrender.com/books">Backend Render Link</Link></span>
         </div>
       </footer>
     </div>
